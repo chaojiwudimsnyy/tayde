@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>页面</title>
+	<link rel="stylesheet" type="text/css" href="https://heerey525.github.io/layui-v2.4.3/layui-v2.4.5/css/layui.css"/>
+   <style type="text/css">
+	   .tableDiv{
+		   margin:50px;
+		   width:800px;
+		   height:500px;
+		   overflow: auto;
+	   }
+   </style>
+
+</head>
+<body>
+	<a href="../../index.html">返回首页</a>
+	<div class="tableDiv">
+		<table class="layui-hide" id="test"></table>
+	</div>
+	<div class="tableDiv">
+		<table class="layui-hide" id="test1"></table>
+	</div>
+	<div class="tableDiv">
+		<table class="layui-hide" id="test2"></table>
+	</div>
+</body>
+</html>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="../../js/layui.all.js"></script>
+<script>
+	//layui的表格
+	layui.use('table', function(){
+		//固定格式
+		  var table = layui.table;
+		  
+		  //渲染第一个table
+		  table.render({
+		    elem: '#test',//绑定页面的id为test的table
+		    url:'http://192.168.1.2:3000/user',//后台传过来的路径
+		    cols: [[
+		      {field:'name', title: '用户名'},
+		      {field:'sex',  title: '性别'},
+		      {field:'age',  title: '年龄'},
+		    ]]
+		  });
+		  
+		  //渲染第二个table
+		  table.render({
+		    elem: '#test1',
+		    url:'http://localhost:3000/user/two',//后台传过来的路径
+		    cols: [[
+		      {field:'name', title: '用户名'},
+		      {field:'sex',  title: '性别'},
+		      {field:'age',  title: '年龄'},
+		      {field:'id',  title: '编号'},
+		      {field:'phone',  title: '手机号'},
+		    ]]
+		  });
+		  
+		  
+		  table.render({ //渲染第三个table
+		    elem: '#test2', //绑定的·要渲染的table的id名
+		    url:'http://localhost:3000/user/two',//后台传过来的路径
+		    cols: [[
+		      {field:'name', title: 'lala'},
+		      {field:'sex',  title: 'haha'},
+		      {field:'age',  title: 'hehe'},
+		      {field:'id',  title: '编号'},
+		      {field:'phone',  title: '手机号'},
+		    ]]
+		  });
+		  
+		  
+		});
+	
+	
+	//layui的表格
+	// layui.use('table', function(){
+	// 	//固定格式
+	// 	  var table = layui.table;
+	// });
+	
+</script>

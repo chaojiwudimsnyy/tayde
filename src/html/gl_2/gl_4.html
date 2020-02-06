@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>页面</title>
+	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+	
+   <style type="text/css">
+	   
+   </style>
+
+</head>
+<body>
+	<a href="../../index.html">返回首页</a>
+	<div id="myCarousel" class="carousel slide" style="margin: 50px auto;width:300px;">
+		<!-- 轮播（Carousel）指标 -->
+		<ol class="carousel-indicators">
+			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#myCarousel" data-slide-to="1"></li>
+			<li data-target="#myCarousel" data-slide-to="2"></li>
+		</ol>   
+		<!-- 轮播（Carousel）项目 -->
+		<div class="carousel-inner">
+			<div class="item active">
+				11111111
+			</div>
+			<div class="item">
+				222222
+			</div>
+			<div class="item">
+				3333
+			</div>
+		</div>
+		<!-- 轮播（Carousel）导航 -->
+		<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
+	</div> 
+	
+	<div class="progress">
+	    <div class="progress-bar" role="progressbar" aria-valuenow="60" 
+	        aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+	        <span class="sr-only">60% 完成</span>
+	    </div>
+	</div>
+	
+	
+	
+	
+	<h2>创建模态框（Modal）</h2>
+	<!-- 按钮触发模态框 -->
+	<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+		开始演示模态框
+	</button>
+	<!-- 模态框（Modal） -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+						&times;
+					</button>
+					<h4 class="modal-title" id="myModalLabel">
+						模态框（Modal）标题
+					</h4>
+				</div>
+				<div class="modal-body">
+					在这里添加一些文本
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">关闭
+					</button>
+					<button type="button" class="btn btn-primary" onclick="alert(1)">
+						提交更改
+					</button>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal -->
+	
+	
+	
+	
+	
+	
+</body>
+</html>
+<script>
+	
+</script>
